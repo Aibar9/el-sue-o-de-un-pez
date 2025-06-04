@@ -1,56 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El sueño del pez</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Georgia', serif;
-      color: #fff;
-      background: url('img/ayashi.jpg') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .poema {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 2rem;
-      border-radius: 1rem;
-      max-width: 600px;
-    }
-
-    .poema p {
-      margin: 1rem 0;
-      font-size: 1.5rem;
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>El sueño de un pez dormido en el barro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="poema">
-    <p><em>El sueño de un pez dormido en el barro</em></p>
-    <p>Bajo la costra del río, un pez sueña.<br>
-    No se mueve, no respira,<br>
-    sólo sueña<br>
-    con el eco de una corriente.</p>
-  </div>
-
-  <script>
-    const audio = new Audio('audio/subacuatica.mp3');
-    audio.loop = true;
-
-    window.addEventListener('click', () => {
-      audio.play();
-    }, { once: true });
-  </script>
-
+    <audio autoplay loop>
+        <source src="audio/subacuatica.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+        </audio>
+    <div class="container">
+        <h1>El sueño de un pez dormido en el barro</h1>
+        <p class="poema">
+            Bajo la costra del río, un pez sueña.<br>
+            No se mueve, no respira<br>
+            sólo sueña<br>
+            con el eco de una corriente.<br><br>
+        </p>
+    </div>
 </body>
 </html>
